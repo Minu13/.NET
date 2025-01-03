@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "CommandLineHelloApp": {
+      "commandName": "Project",
+      "commandLineArgs": "Minu Deepa Shalini Mathi"
+    }
+  }
+}
