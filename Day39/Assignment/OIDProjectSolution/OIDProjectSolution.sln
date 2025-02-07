@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EngineeringCollegeLib", "EngineeringCollegeLib\EngineeringCollegeLib.csproj", "{97BE0223-BC29-48F5-965B-515C2861F378}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EngineeringCollegeApp", "EngineeringCollegeApp\EngineeringCollegeApp.csproj", "{43A1C4FB-208C-490D-A69B-A120A4113BB9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{97BE0223-BC29-48F5-965B-515C2861F378}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97BE0223-BC29-48F5-965B-515C2861F378}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97BE0223-BC29-48F5-965B-515C2861F378}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97BE0223-BC29-48F5-965B-515C2861F378}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43A1C4FB-208C-490D-A69B-A120A4113BB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43A1C4FB-208C-490D-A69B-A120A4113BB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43A1C4FB-208C-490D-A69B-A120A4113BB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43A1C4FB-208C-490D-A69B-A120A4113BB9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

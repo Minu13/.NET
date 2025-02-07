@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Voilation", "Voilation", "{ABB2A56A-A6A7-4D5A-90A3-FC253E1A72A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DIPConsoleVoilationApp", "DIPConsoleVoilationApp\DIPConsoleVoilationApp.csproj", "{A72C638F-D1AB-4C78-A364-8C890AE3E967}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Refactored", "Refactored", "{30B0797B-8A33-48E4-8CC2-4228EBBBE54D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxCommonLib", "TaxCommonLib\TaxCommonLib.csproj", "{C08804A3-CFD7-444A-BED9-EC7445C4A1FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxCalcInfraConsoleApp", "TaxCalcInfraConsoleApp\TaxCalcInfraConsoleApp.csproj", "{036F9703-D712-4E2F-BF67-7C668C11F616}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A72C638F-D1AB-4C78-A364-8C890AE3E967}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A72C638F-D1AB-4C78-A364-8C890AE3E967}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A72C638F-D1AB-4C78-A364-8C890AE3E967}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A72C638F-D1AB-4C78-A364-8C890AE3E967}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C08804A3-CFD7-444A-BED9-EC7445C4A1FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C08804A3-CFD7-444A-BED9-EC7445C4A1FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C08804A3-CFD7-444A-BED9-EC7445C4A1FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C08804A3-CFD7-444A-BED9-EC7445C4A1FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{036F9703-D712-4E2F-BF67-7C668C11F616}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{036F9703-D712-4E2F-BF67-7C668C11F616}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{036F9703-D712-4E2F-BF67-7C668C11F616}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{036F9703-D712-4E2F-BF67-7C668C11F616}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A72C638F-D1AB-4C78-A364-8C890AE3E967} = {ABB2A56A-A6A7-4D5A-90A3-FC253E1A72A2}
+		{C08804A3-CFD7-444A-BED9-EC7445C4A1FA} = {30B0797B-8A33-48E4-8CC2-4228EBBBE54D}
+		{036F9703-D712-4E2F-BF67-7C668C11F616} = {30B0797B-8A33-48E4-8CC2-4228EBBBE54D}
+	EndGlobalSection
+EndGlobal
