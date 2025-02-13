@@ -24,7 +24,7 @@ public class Program
             {
                 con.Open();
 
-                // Create the AppUser table if it doesn't exist
+                
                 var createTableCmd = new SqlCommand(
                     "IF NOT EXISTS (SELECT * FROM sysobjects WHERE name='AppUser' AND xtype='U')" +
                     " CREATE TABLE AppUser (" +
@@ -33,7 +33,7 @@ public class Program
                     ")", con);
                 createTableCmd.ExecuteNonQuery();
 
-                // Insert sample data
+               
                 var insertDataCmd1 = new SqlCommand("IF NOT EXISTS (SELECT * FROM AppUser WHERE userID = 1) INSERT INTO AppUser (userID, password) VALUES (1, 'password123')", con);
                 var insertDataCmd2 = new SqlCommand("IF NOT EXISTS (SELECT * FROM AppUser WHERE userID = 2) INSERT INTO AppUser (userID, password) VALUES (2, 'secret456')", con);
                 insertDataCmd1.ExecuteNonQuery();
