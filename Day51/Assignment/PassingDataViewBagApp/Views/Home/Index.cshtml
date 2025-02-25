@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Display Username";
+}
+
+<h2>Username Display</h2>
+
+@if (ViewBag.Username != null)
+{
+    <ul>
+        @for (int i = 0; i < 10; i++)
+        {
+            <li>@ViewBag.Username</li>
+        }
+    </ul>
+}
+else
+{
+    <p>No username provided.</p>
+}
