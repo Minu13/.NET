@@ -1,0 +1,35 @@
+﻿
+
+@if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+{
+    <p style="color: red;">@ViewBag.ErrorMessage</p>
+}
+@if (!string.IsNullOrEmpty(ViewBag.SuccessMessage))
+{
+    <p style="color: green;">@ViewBag.SuccessMessage</p>
+}
+
+<link href="~/css/style.css" rel="stylesheet" />
+<form id="loginForm" method="post">
+    <h2>Login</h2>
+    <div>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" />
+        <span id="usernameError" style="color: red;"></span>
+    </div>
+    <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" />
+        <span id="passwordError" style="color: red;"></span>
+    </div>
+    <div>
+        <button type="submit">Login</button>
+    </div>
+</form>
+
+<script src="~/js/validation.js"></script>
+
+
+
+
+

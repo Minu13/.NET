@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+</head>
+<body>
+    <form id="registrationForm" action="/customer/Register" method="post">
+        <input type="text" name="firstName" placeholder="Enter firstname" />
+        <br />
+        <input type="text" name="lastName" placeholder="Enter lastname" />
+        <br />
+        <input type="submit" value="Register ME!" />
+    </form>
+
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#registrationForm").validate({
+                rules: {
+                    firstName: {
+                        required: true
+                    },
+                    lastName: {
+                        required: true
+                    }
+                },
+                messages: {
+                    firstName: {
+                        required: "First name is required"
+                    },
+                    lastName: {
+                        required: "Last name is required"
+                    }
+                },
+                submitHandler: function (form) {
+                    form.submit();
+                }
+
+            });
+
+        });
+
+
+    </script>
+
+    @* <script src="~/wwwroot/js/register.js"></script> *@
+   
+</body>
+</html>
