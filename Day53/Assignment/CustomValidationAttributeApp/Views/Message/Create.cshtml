@@ -1,0 +1,11 @@
+﻿@using CustomValidationAttributeApp.Model
+@model MessageAttributeModel
+
+@using (Html.BeginForm())
+{
+    <p>
+        Message Content: @Html.TextBoxFor(m => m.MessageContent)
+        @Html.ValidationMessageFor(m => m.MessageContent, "", new { @class = "text-danger" })
+    </p>
+    <button type="submit">Submit</button>
+}
