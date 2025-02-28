@@ -1,0 +1,42 @@
+﻿@{
+    ViewBag.ChildTitle = "Home";
+    
+}
+
+<div class="container mt-5">
+    <div class="jumbotron text-center bg-light">
+        <img src="~/images/banklogo.jfif" alt="Your Bank Logo" class="mb-4 rounded-circle" style="width:150px; height:150px;">
+        <h1 class="display-4">Welcome to Our Secure Online Banking</h1>
+        <p class="lead">Your trusted partner for financial services.</p>
+        <hr class="my-4">
+        <p>Manage your accounts, transfer funds, and more, all from the convenience of your home.</p>
+        <a class="btn btn-primary btn-lg" asp-controller="Account" asp-action="Login" role="button">Login to Your Account</a>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Secure Transactions</h5>
+                    <p class="card-text">We employ advanced security measures to protect your financial information.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">24/7 Access</h5>
+                    <p class="card-text">Access your accounts and perform transactions anytime, anywhere.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Customer Support</h5>
+                    <p class="card-text">Our dedicated support team is ready to assist you with any questions.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
