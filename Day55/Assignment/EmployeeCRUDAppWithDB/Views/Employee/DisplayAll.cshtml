@@ -1,0 +1,44 @@
+﻿@using EmployeeCRUDAppWithDB.DTOs
+@model DisplayAllDto
+
+@{
+    ViewData["Title"] = "Employee Information";
+  }
+
+<h2>Current employee strength is @Model.Count</h2>
+<p>
+    @Html.ActionLink("Add Employee", "Add", "Employee", null, new { @class = "btn btn-primary" })
+</p>
+
+<table class="table table-striped">
+    <thead class="thead-dark">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Salary</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var emp in Model.Employees)
+        {
+            <tr>
+                <td>@emp.Id</td>
+                <td>@emp.Name</td>
+                <td>@emp.Salary</td>
+                <td>@Html.ActionLink("Edit", "Edit", "Employee", new { id = emp.Id }, new { @class = "btn btn-warning" })</td>
+                <td>@Html.ActionLink("X", "Delete", "Employee", new { id = emp.Id }, new { @class = "btn btn-danger", onclick = "return fnAreYouSure()" })</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+    <script>
+        function fnAreYouSure() {
+            return confirm('Are you sure you want to delete?');
+        }
+    </script>
+
+

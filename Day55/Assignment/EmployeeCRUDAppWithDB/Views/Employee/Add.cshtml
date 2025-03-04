@@ -1,0 +1,25 @@
+﻿@using EmployeeCRUDAppWithDB.DTOs
+@model EmployeeAddDto
+
+
+<div class="card">
+    <div class="card-header">
+        <h2>@Model.HeaderTitle</h2>
+    </div>
+    <div class="card-body">
+        @using (Html.BeginForm(null, null, FormMethod.Post, new { @class = "form-horizontal" }))
+        {
+            <div class="form-group">
+                @Html.LabelFor(m => m.Name, new { @class = "control-label" })
+                @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(m => m.Salary, new { @class = "control-label" })
+                @Html.TextBoxFor(m => m.Salary, new { @class = "form-control" })
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Add" class="btn btn-primary" />
+            </div>
+        }
+    </div>
+</div>
