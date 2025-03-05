@@ -1,0 +1,39 @@
+﻿
+@model UserDTO
+
+
+
+<h1>Welcome to the TagHelpers</h1>
+
+<banner message="Hello,  This is my custom Tag Helper in action." color="green"></banner>
+
+
+
+
+<h2>Comparing Normal HTML vs asp-for</h2>
+
+<form method="post">
+    <div>
+        <h3>Normal HTML</h3>
+        <label for="Name">Name (Normal HTML):</label>
+        <input type="text" id="Name" name="Name" value="@Model.Name" class="form-control" />
+        <span class="text-danger">@Html.ValidationMessageFor(m => m.Name)</span>
+    </div>
+
+    <br />
+
+    <div>
+        <h3>ASP.NET Tag Helper</h3>
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <br />
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+@if (!string.IsNullOrEmpty(ViewBag.Message))
+{
+    <p class="text-success">@ViewBag.Message</p>
+}
