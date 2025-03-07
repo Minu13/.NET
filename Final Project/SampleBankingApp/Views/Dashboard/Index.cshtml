@@ -1,0 +1,52 @@
+﻿@using SampleBankingApp.DTOs
+@model UserDashboardDTO
+
+
+<div class="container mt-4">
+    <h2 class="text-center">Welcome, @Model.FullName!</h2>
+    <h4 class="text-center text-primary">Account: @Model.AccountNumber</h4>
+    @* <h5 class="text-center text-success">Balance: $@Model.Balance</h5> *@
+
+    <hr />
+
+    <h3 class="mt-4">Transaction History</h3>
+    <table class="table table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>ID</th>
+                <th>Amount</th>
+                <th>Type</th>
+                <th>Date</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @if (Model.Transactions != null && Model.Transactions.Count > 0)
+            {
+                @foreach (var transaction in Model.Transactions)
+                {
+                    <tr>
+                        <td>@transaction.TransactionId</td>
+                        <td>$@transaction.Amount</td>
+                        <td>@transaction.TransactionType</td>
+                        <td>@transaction.TransactionDate.ToShortDateString()</td>
+                        <td>@transaction.Description</td>
+                    </tr>
+                }
+            }
+
+
+            else
+            {
+                <tr><td colspan="5">No transactions found.</td></tr>
+            }
+
+        </tbody>
+    </table>
+</div>
+
+
+
+
+

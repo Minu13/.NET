@@ -1,0 +1,25 @@
+﻿@using SampleBankingApp.DTOs
+@model TransactionDTO
+
+@{
+    ViewData["Title"] = "Transaction";
+}
+
+<h2>Make a Transaction</h2>
+
+<form method="post" action="/Transaction/ProcessTransaction">
+    <label for="transactionType">Transaction Type:</label>
+    <select name="TransactionType" id="transactionType">
+        <option value="Deposit">Deposit</option>
+        <option value="Withdraw">Withdraw</option>
+    </select>
+    <br />
+    <label for="amount">Amount:</label>
+    <input type="number" name="Amount" step="0.01" required />
+    <br />
+    <label for="description">Description:</label>
+    <input type="text" name="Description" />
+    <br />
+    <input type="hidden" name="AccountId" value="@Model.AccountId" />
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
